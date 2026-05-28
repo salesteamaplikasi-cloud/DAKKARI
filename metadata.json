@@ -1,0 +1,8 @@
+{
+  "name": "Toko Dakkari Dashboard",
+  "description": "Platform Dashboard for Toko Dakkari Purbalingga to manage data and Google Form submissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
