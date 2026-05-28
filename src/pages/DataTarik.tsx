@@ -181,8 +181,11 @@ export default function DataTarik() {
                             Masukkan Web App URL (Apps Script) Anda di bawah ini dan tekan tarik data.
                         </p>
                     </div>
-                    <button onClick={() => alert(scriptCode)} className="text-xs font-bold px-3 py-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-800 rounded-lg flex items-center gap-2 transition-colors shrink-0">
-                         <Code2 className="w-4 h-4" /> Lihat Kode Script (Copy)
+                    <button onClick={() => {
+                        navigator.clipboard.writeText(scriptCode);
+                        alert('Kode script berhasil disalin ke clipboard!');
+                    }} className="text-xs font-bold px-3 py-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-800 rounded-lg flex items-center gap-2 transition-colors shrink-0">
+                         <Code2 className="w-4 h-4" /> Salin Kode Script
                     </button>
                 </div>
                 <div className="mt-4 flex max-w-xl">
